@@ -1,6 +1,5 @@
 import { User } from './../Models/user';
 import { Injectable } from '@angular/core';
-import { User } from '../Models/user';
 import { Observable, of } from 'rxjs';
 
 
@@ -8,9 +7,9 @@ import { Observable, of } from 'rxjs';
   providedIn: 'root'
 })
 export class UserService {
-  
 
-  private user: User[] = [{
+
+  private users: User[] = [{
     id: 1,
     name: 'jesus',
     lastname: 'camacaro',
@@ -26,10 +25,11 @@ export class UserService {
     username: 'david',
     password: '12345'
   }];
+
   constructor() { }
 
   findAll(): Observable<User[]>{
-    return of(this.user);
+    return of(this.users);
   }
 
 }
