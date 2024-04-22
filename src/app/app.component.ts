@@ -10,5 +10,4 @@ import { UserAppComponent } from './components/user-app-component';
 })
 export class AppComponent {
   title = 'Listado De Usuarios!';
-users: any;
 }
