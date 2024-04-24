@@ -1,7 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { User } from '../../Models/user';
-import { CommonModule, NgFor } from '@angular/common';
 
 @Component({
   selector: 'user-form',
@@ -31,8 +30,8 @@ onSubmit(userForm : NgForm): void{
 }
 
 onClear(userForm: NgForm): void{
-this.user=  new User;
-userForm.reset();
+/* this.user=  new User;
+userForm.reset(); */
 userForm.resetForm();
 }
 
